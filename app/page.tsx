@@ -1,4 +1,3 @@
-// this is main page which is rendered
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 

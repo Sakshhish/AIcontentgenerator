@@ -1,5 +1,6 @@
 import React from 'react'
 import SideNav from './_components/SideNav';
+import Header from './_components/Header';
 
 
 function layout({
@@ -11,12 +12,11 @@ function layout({
     return (
       <div>
           <div className='md:w-64 hidden md:block fixed'>
-     
               <SideNav />
           </div>
-      
           <div className='md:ml-64'>
-              {children}
+            <Header />
+            {children}
           </div>
       </div>
     )

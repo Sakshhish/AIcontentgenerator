@@ -1,12 +1,17 @@
 import React from 'react'
-// Sign in to visit dashboard
+import SearchSection from './_components/SearchSection'
+import TemplateListSection from './_components/TemplateListSection'
+
 function Dashboard() {
   return (
     <div>
-      Dashboard
+
+      <SearchSection />
+
+      <TemplateListSection />
+
     </div>
   )
 }
 
 export default Dashboard
-
