@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useEffect, useState } from 'react';
 import templates from '@/app/(data)/Templates';
 import TemplateCard from './TemplateCard';
