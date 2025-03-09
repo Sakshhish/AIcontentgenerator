@@ -23,12 +23,19 @@ function SideNav() {
   return (
     <div className='h-screen p-5 shadow-sm border bg-white'>
       <div className='flex justify-center border-b'>
-        <Image src={'/logo.svg'} alt='logo' width={100} height={100} />
+        <Image
+          src={'/logo.svg'}
+          alt='logo'
+          width={100}
+          height={100}
+          style={{ width: 'auto', height: 'auto' }}
+        />
       </div>
       <hr className='my-6 border' />
       <div className='mt-3'>
         {MenuList.map((menu, index) => (
           <div
+            key={index}
             className={`flex gap-2 mb-2 p-3 hover:bg-primary 
              hover:text-white rounded-lg cursor-pointer items-center
              ${path === menu.path ? 'bg-primary text-white' : ''}`}
