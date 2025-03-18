@@ -3,8 +3,11 @@
 import React, { useEffect, useRef } from "react";
 import dynamic from "next/dynamic"; // Import Next.js dynamic
 import "@toast-ui/editor/dist/toastui-editor.css";
+import { Editor } from "@toast-ui/react-editor";
 import { Copy } from "lucide-react";
 import { Button } from "@/components/ui/Button";
+
+interface 
 
 // Dynamically import @toast-ui/react-editor to prevent SSR issues
 const Editor = dynamic(() => import("@toast-ui/react-editor").then(mod => mod.Editor), { ssr: false });
